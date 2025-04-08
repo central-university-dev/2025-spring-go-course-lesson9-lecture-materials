@@ -1,0 +1,20 @@
+syntax = "proto3";
+package stream;
+
+import "google/protobuf/empty.proto";
+
+option go_package = "grpc/stream";
+
+message StreamRequest {
+  int64 count = 1;
+}
+
+message Value {
+  int64 value = 1;
+}
+
+service IntStream {
+  rpc ServerSideStream(StreamRequest) returns(stream Value) {}
+  rpc ClientSideStream(stream Value) returns(google.protobuf.Empty) {}
+  rpc BidirectionalStream(stream Value) returns(stream Value) {}
+}

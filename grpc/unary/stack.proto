@@ -1,0 +1,16 @@
+syntax = "proto3";
+package unary;
+
+import "google/protobuf/empty.proto";
+
+option go_package = "grpc/unary";
+
+message Value {
+  int64 value = 1;
+}
+
+service IntStack {
+  rpc Push(Value) returns (google.protobuf.Empty) {}
+  rpc Pop(google.protobuf.Empty) returns(Value) {}
+  rpc Peek(google.protobuf.Empty) returns(Value) {}
+}

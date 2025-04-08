@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"gitlab.tcsbank.ru/dealer/toolbox/edu9/grpc/unary"
 	"google.golang.org/protobuf/types/known/emptypb"
+	"lecture9.demo/grpc/unary"
 )
 
 type StackServer struct {

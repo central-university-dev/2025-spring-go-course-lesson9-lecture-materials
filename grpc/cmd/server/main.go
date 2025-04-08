@@ -3,10 +3,10 @@ package main
 import (
 	"net"
 
-	"gitlab.tcsbank.ru/dealer/toolbox/edu9/grpc/internal"
-	"gitlab.tcsbank.ru/dealer/toolbox/edu9/grpc/stream"
-	"gitlab.tcsbank.ru/dealer/toolbox/edu9/grpc/unary"
 	"google.golang.org/grpc"
+	"lecture9.demo/grpc/internal"
+	"lecture9.demo/grpc/stream"
+	"lecture9.demo/grpc/unary"
 )
 
 func main() {

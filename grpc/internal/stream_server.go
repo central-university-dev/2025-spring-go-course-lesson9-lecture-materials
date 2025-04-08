@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.tcsbank.ru/dealer/toolbox/edu9/grpc/stream"
+	"lecture9.demo/grpc/stream"
 )
 
 type StreamingService struct {
